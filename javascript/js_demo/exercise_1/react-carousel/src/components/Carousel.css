@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#carousel-container {
+    padding-top: 50px;
+}
+
+
+.contain {
+    position: relative;
+    width: 800px;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.contain .ul {
+    list-style: none;
+    height: 100%;
+}
+.ul li {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.ul li.show {
+    display: block;
+}
+
+
+.contain .dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    height: 10px;
+}
+.dots li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: red;
+    list-style: none;
+}
+.dots li.active {
+    background: blue;
+    width: 20px;
+}
+
+.control > .left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+.control > .left:hover {
+    color: orange;
+}
+.control > .right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+.control > .right:hover {
+    color: orange;
+}
