@@ -30,6 +30,14 @@
         </style>
     </head>
     <body>
+        <!-- 
+            关键词： 
+                touchstart、touchmove、touchend 事件
+                startY: event(touchstart).changedTouches[0].clientY;
+                dy（差距）: event(touchmove).changedTouches[0].clientY - startY;
+                
+                transform: translate（位移） 、translation（过渡）
+         -->
         <section id="main">
             <div class="draw" id='draw'>
                 <ul>
@@ -83,7 +91,7 @@
                     tempY = maxUp;
                 }
                 
-                // 设置 ul 在 Y 轴上的偏移
+                // 设置 ul 在 Y 轴上的位移
                 ul.style.transform = 'translateY(' + tempY + 'px)';
             });
 
